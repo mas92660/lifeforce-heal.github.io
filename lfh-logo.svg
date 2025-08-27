@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
-  <!-- two-circle mark -->
   <circle cx="98" cy="128" r="56" fill="#5BC0BE" opacity=".95"/>
   <circle cx="158" cy="128" r="56" fill="#A7E2E3" opacity=".95"/>
-  <!-- small angled wave -->
   <g transform="rotate(-18 170 170) translate(18 20)">
     <path d="M150 160c8 10 18 10 26 0m-40 0c8 10 18 10 26 0m-40 0c8 10 18 10 26 0"
           fill="none" stroke="#3C8FB1" stroke-width="4" stroke-linecap="round"/>
