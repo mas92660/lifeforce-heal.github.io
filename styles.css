@@ -1,4 +1,4 @@
-:root{
+root{
   --teal:#5BC0BE; --aqua:#A7E2E3; --text:#273640; --muted:#6B8594; --bg:#F7FBFC; --white:#fff;
 }
 
@@ -27,15 +27,15 @@ h1{font-size:1.6rem} h2{font-size:2.4rem} h3{font-size:1.4rem} h4{font-size:1.05
 .btn.primary{background:var(--teal);color:#0f2830;border-color:var(--teal)}
 .btn.ghost{color:var(--teal);background:transparent}
 
-/* Stronger, layered diagonal waves */
-.hero-wave{
-  position:absolute; inset:-12% -4% 0 -4%;
-  pointer-events:none; z-index:0;
-  background:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'><path fill='%232f6fa4' fill-opacity='.15' d='M0,224L48,224C96,224,192,224,288,197.3C384,171,480,117,576,112C672,107,768,149,864,170.7C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,0L0,0Z'/></svg>") no-repeat center/120% 100%,
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'><path fill='%233e8cc7' fill-opacity='.20' d='M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,208C672,213,768,203,864,192C960,181,1056,171,1152,165.3C1248,160,1344,160,1392,160L1440,160L1440,0L0,0Z'/></svg>") no-repeat center/120% 100%,
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'><path fill='%235BC0BE' fill-opacity='.30' d='M0,256L48,245.3C96,235,192,213,288,213.3C384,213,480,235,576,240C672,245,768,235,864,224C960,213,1056,203,1152,192C1248,181,1344,171,1392,165.3L1440,160L1440,0L0,0Z'/></svg>") no-repeat center/120% 100%;
-  transform:rotate(-2.5deg);
+/* Smoother single wave */
+.hero-wave {
+  position: absolute;
+  inset: -5% 0 0 0;
+  height: 100%;
+  background: url("data:image/svg+xml;utf8,    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>      <path fill='%235BC0BE' fill-opacity='0.30' d='M0,160L48,176C96,192,192,224,288,229.3C384,235,480,213,576,176C672,139,768,85,864,96C960,107,1056,181,1152,208C1248,235,1344,213,1392,202.7L1440,192L1440,320L0,320Z'/>    </svg>") no-repeat center/cover;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(0deg);
 }
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;z-index:0;
   background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(247,251,252,1) 100%);
