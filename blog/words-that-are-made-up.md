@@ -1,5 +1,6 @@
 ---
 title: Words That Are Made Up
+layout: post
 date: 2026-05-24T22:49:00.000-07:00
 description: The moment you label something, you stop seeing it. A simple
   tactile experiment to drop the words and meet life directly.
